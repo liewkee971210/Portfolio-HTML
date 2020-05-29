@@ -41,9 +41,9 @@
     </header>
 
     <!-- About  -->
-    <section>
+    <section class="about pb-5 pt-3">
         <div class="container  mt-5">
-            <div class="about justify-content-center">
+            <div class="row justify-content-center">
                 
                 <!-- profile picture -->
                 <!-- <div class = "row-pic align-items-center ">  -->
@@ -62,110 +62,136 @@
     <!-- resume  -->
 
     <!-- Tab links -->
-    <section>
-        <div class="about justify-content-center">
-            <p>Resume</p>
+    <section class = "resume pb-5 pt-3">
+        <div class="container">
+            <div class="row justify-content-center pb-3">
+                <p>Resume</p>
+            </div>
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Educations</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">Work Experience</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Skills</button>
+            </div>
+          
+            <!-- Tab content -->
+            <!-- <div id="London" class="tabcontent">
+                <h3>London</h3>
+                <p>London is the capital city of England.</p>
+            </div> -->
+        
+            <div id="London" class="tabcontent">
+                <div>
+                    <div class="row edu-name ml-3 mr-3">
+                        <b>Monash University</b> 
+                        <span class="right"><i>2016-2019</i></span>
+                    </div>
+                    <div class="row edu-name ml-3 mr-3">
+                        <b>Bachelor of Computer Science</b> <span><i>Sunway,Selangor</i></span>
+                    </div>
+                </div>
+                <div class="mt-2">
+                    <div class="row edu-name ml-3 mr-3">
+                        <b>Sunway College</b> 
+                        <span class="right"><i>2015-2016</i></span>
+                    </div>
+                    <div class="row edu-name ml-3 mr-3">
+                        <b>GCE A levels</b> <span><i>Sunway,Selangor</i></span>
+                    </div>
+                </div>
+            </div>
+          
+            <div id="Paris" class="tabcontent">
+                <div>
+                    <div class="row edu-name ml-3 mr-3">
+                        <b>Cataloochee Ski Area</b> 
+                        <span class="right"><i>2019-2020</i></span>
+                    </div>
+                    <div class="row edu-name ml-3 mr-3">
+                        <b>Ski Instructor</b> <span><i>Maggie Valley,North Carolina</i></span>
+                    </div>
+                </div>
+                <div class="mt-2">
+                    <div class="row edu-name ml-3 mr-3">
+                        <b>Techvus Sdn Bhd</b> 
+                        <span class="right"><i>2018-2019</i></span>
+                    </div>
+                    <div class="row edu-name ml-3 mr-3">
+                        <b>Front End Mobile App Developer(Internship)</b> <span><i>Petaling Jaya,Selangor</i></span>
+                    </div>
+                </div>
+                <div class="mt-2">
+                    <div class="row edu-name ml-3 mr-3">
+                        <b>Popular Book Store</b> 
+                        <span class="right"><i>2016</i></span>
+                    </div>
+                    <div class="row edu-name ml-3 mr-3">
+                        <b>Retail Assistant</b> <span><i>Ipoh,Perak</i></span>
+                    </div>
+                </div>
+            </div>
+          
+            <div id="Tokyo" class="tabcontent">
+                <div class=" row justify-content-space-around">
+                    <div class="">
+                        <b>Programming</b> 
+                        <ul>
+                            <li class="">"Python"</li>
+                            <li class="">"Javascript"</li>
+                            <li class="">"Java"</li>
+                            <li class="">"HTML5"</li>
+                            <li class="">"CSS"</li>
+                            <li class="">"React Native"</li>
+                            <li class="">"R"</li>
+                        </ul>
+                    </div>
+                    <div class="mr-3">
+                        <b>Others</b> 
+                        <ul>
+                            <li class="">"Chinese"</li>
+                            <li class="">"English"</li>
+                            <li class="">"Malay"</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Educations</button>
-            <button class="tablinks" onclick="openCity(event, 'Paris')">Work Experience</button>
-            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Skills</button>
-        </div>
-      
-        <!-- Tab content -->
-        <!-- <div id="London" class="tabcontent">
-            <h3>London</h3>
-            <p>London is the capital city of England.</p>
-        </div> -->
-    
-        <div id="London" class="tabcontent">
-            <div>
-                <div class="row edu-name ml-3 mr-3">
-                    <b>Monash University</b> 
-                    <span class="right"><i>2016-2019</i></span>
-                </div>
-                <div class="row edu-name ml-3 mr-3">
-                    <b>Bachelor of Computer Science</b> <span><i>Sunway,Selangor</i></span>
-                </div>
-            </div>
-            <div class="mt-2">
-                <div class="row edu-name ml-3 mr-3">
-                    <b>Sunway College</b> 
-                    <span class="right"><i>2015-2016</i></span>
-                </div>
-                <div class="row edu-name ml-3 mr-3">
-                    <b>GCE A levels</b> <span><i>Sunway,Selangor</i></span>
-                </div>
-            </div>
-        </div>
-      
-        <div id="Paris" class="tabcontent">
-            <div>
-                <div class="row edu-name ml-3 mr-3">
-                    <b>Cataloochee Ski Area</b> 
-                    <span class="right"><i>2019-2020</i></span>
-                </div>
-                <div class="row edu-name ml-3 mr-3">
-                    <b>Ski Instructor</b> <span><i>Maggie Valley,North Carolina</i></span>
-                </div>
-            </div>
-            <div class="mt-2">
-                <div class="row edu-name ml-3 mr-3">
-                    <b>Techvus Sdn Bhd</b> 
-                    <span class="right"><i>2018-2019</i></span>
-                </div>
-                <div class="row edu-name ml-3 mr-3">
-                    <b>Front End Mobile App Developer(Internship)</b> <span><i>Petaling Jaya,Selangor</i></span>
-                </div>
-            </div>
-            <div class="mt-2">
-                <div class="row edu-name ml-3 mr-3">
-                    <b>Popular Book Store</b> 
-                    <span class="right"><i>2016</i></span>
-                </div>
-                <div class="row edu-name ml-3 mr-3">
-                    <b>Retail Assistant</b> <span><i>Ipoh,Perakr</i></span>
-                    <!-- ahahahahhahah -->
-                </div>
-            </div>
-        </div>
-      
-        <div id="Tokyo" class="tabcontent">
-            <div class=" row justify-content-space-around">
-                <div class="">
-                    <b>Programming</b> 
-                    <ul>
-                        <li class="">"Python"</li>
-                        <li class="">"Javascript"</li>
-                        <li class="">"Java"</li>
-                        <li class="">"HTML5"</li>
-                        <li class="">"CSS"</li>
-                        <li class="">"React Native"</li>
-                        <li class="">"R"</li>
-                    </ul>
-                </div>
-                <div class="mr-3">
-                    <b>Others</b> 
-                    <ul>
-                        <li class="">"Chinese"</li>
-                        <li class="">"English"</li>
-                        <li class="">"Malay"</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        
 
     </section>
 
     <!-- Projects -->
 
-    <section>
-        <div class="about justify-content-center">
-            <p>Projects</p>
+    <section class = "project pb-5 pt-3">
+        <div class="container">
+            <div class="text-center">
+                <p>Projects</p>
+            </div>
+
+            <div class="row justify-content-space-around ">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">COMING SOON</h4>
+                        <hr class="my-4" />
+                        <div class="small text-black-50">PROJECT 1</div>
+                    </div>
+                </div>
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">COMING SOON</h4>
+                        <hr class="my-4" />
+                        <div class="small text-black-50">PROJECT 2</div>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
+    </section>
     <!-- footer  -->
     <footer>
-        <div class= "container row justify-content-center">
+        <div class= "container row justify-content-center pt-5 pb-3">
             <div>
                 <div>
                     <a href="#" class="mr-2 ml-2 fa fa-facebook"></a>
@@ -186,7 +212,8 @@
 </body>
 </html>
 
-
+<!-- https://www.linkedin.com/in/kee-liew-973749169/ -->
+<!-- https://www.facebook.com/liew.kee.3 -->
 
 
 <!-- 
